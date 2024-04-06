@@ -1,12 +1,12 @@
 import React, { useState, useContext, useEffect } from 'react'
 // make sure to use https
-export const API_ENDPOINT = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_MOVIE_API_KEY}`
+export const API_ENDPOINT = `http://www.omdbapi.com/?apikey=${process.env.REACT_APP_MOVIE_API_KEY}`
 const AppContext = React.createContext()
 
 const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState({ show: false, msg: {} });
-  const [movie, setMovie] = useState([]);
+  const [error, setError] = useState({ show: false, msg: '' });
+  const [movies, setMovie] = useState([]);
   const [query, setQuery] = useState('batman');
 
   const fetchMovies = async (url) => {
@@ -17,7 +17,7 @@ const AppProvider = ({ children }) => {
       console.log(data);
       if (data.Response === 'True') {
         setMovie(data.Search)
-        setError({ show: false, msg: {} })
+        setError({ show: false, msg: '' })
       } else {
         setError({ show: true, msg: data.Error })
       }
@@ -28,14 +28,14 @@ const AppProvider = ({ children }) => {
   }
 
   useEffect(() => {
-    fetchMovies(`${API_ENDPOINT}&=s${query}`)
+    fetchMovies(`${API_ENDPOINT}&s=${query}`)
   }, [query])
 
 
   return <AppContext.Provider value={{
     error,
     loading,
-    movie,
+    movies,
     query,
     setQuery
   }}>{children}</AppContext.Provider>
