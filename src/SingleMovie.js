@@ -23,6 +23,10 @@ const SingleMovie = () => {
     }
   }
 
+  if (isLoading) {
+    return <div className="loading"></div>
+  }
+
   useEffect(() => {
     fetchMovie(`${API_ENDPOINT}&i=${id}`)
   }, [id])
