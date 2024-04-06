@@ -27,6 +27,13 @@ const SingleMovie = () => {
     return <div className="loading"></div>
   }
 
+  if (error.show) {
+    return <div className="page-error">
+      <h1>{error.msg}</h1>
+      <Link to='/' className='btn'>back to movies</Link>
+    </div>
+  }
+
   useEffect(() => {
     fetchMovie(`${API_ENDPOINT}&i=${id}`)
   }, [id])
