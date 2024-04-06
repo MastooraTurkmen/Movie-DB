@@ -5,8 +5,10 @@ import Movies from './Movies'
 const Home = () => {
   return (
     <>
-      <Form />
-      <Movies />
+      <main>
+        <Form />
+        <Movies />
+      </main>
     </>
   )
 }
