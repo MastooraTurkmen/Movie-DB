@@ -14,10 +14,17 @@ const SingleMovie = () => {
   const fetchMovie = async (url) => {
     const response = await fetch(url);
     const data = await response.json();
+    if (data.Response === 'False') {
+      setIsLoading(false);
+      setError({ show: true, msg: data.Error })
+    } else {
+      setIsLoading(false);
+      setMovie(data)
+    }
   }
 
   useEffect(() => {
-    fetchMovie( )
+    fetchMovie(`${API_ENDPOINT}&i=${id}`)
   }, [id])
 
   return <h2>single movie</h2>
