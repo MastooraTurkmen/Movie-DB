@@ -7,3 +7,7 @@ npm install react-router-dom@6
 ```
 
 ![alt text](image.png)
+
+![alt text](image-1.png)
+
+
