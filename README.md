@@ -13,3 +13,4 @@ npm install react-router-dom@6
 
 #### Single Movie
 
+![alt text](image-2.png)
