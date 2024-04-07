@@ -10,7 +10,7 @@ npm install react-router-dom@6
 
 ![alt text](./Screenshots/image.png)
 
-![alt text](image-1.png)
+![alt text](./Screenshots/image-1.png)
 
 
 #### Single Movie
