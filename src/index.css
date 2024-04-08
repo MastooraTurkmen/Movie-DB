@@ -21,6 +21,7 @@ Variables
   --radius: 0.25rem;
   --max-width: 1170px;
 }
+
 /*
 =============== 
 Global Styles
@@ -34,6 +35,7 @@ Global Styles
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -42,12 +44,15 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
 }
+
 ul {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
 }
+
 h1,
 h2,
 h3,
@@ -57,38 +62,49 @@ h4 {
   line-height: 1.25;
   margin-bottom: 0.75rem;
 }
+
 h1 {
   font-size: 2.5rem;
 }
+
 h2 {
   font-size: 2rem;
 }
+
 h3 {
   font-size: 1.25rem;
 }
+
 h4 {
   font-size: 0.875rem;
 }
+
 p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-3);
 }
+
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 3rem;
   }
+
   h2 {
     font-size: 2.5rem;
   }
+
   h3 {
     font-size: 1.75rem;
   }
+
   h4 {
     font-size: 1rem;
   }
+
   body {
     font-size: 1rem;
   }
+
   h1,
   h2,
   h3,
@@ -96,6 +112,7 @@ p {
     line-height: 1;
   }
 }
+
 /*  global classes */
 
 /* section */
@@ -110,6 +127,7 @@ p {
     width: 95vw;
   }
 }
+
 /*
 =============== 
 Search
@@ -122,6 +140,7 @@ Search
   margin-top: 5rem;
   margin-bottom: 3rem;
 }
+
 .form-input {
   width: 100%;
   border: transparent;
@@ -134,12 +153,14 @@ Search
   letter-spacing: var(--spacing);
   margin-top: 1rem;
 }
+
 .error {
   color: var(--clr-red-dark);
   text-transform: capitalize;
   padding-top: 0.5rem;
   letter-spacing: var(--spacing);
 }
+
 /*
 =============== 
 Loading
@@ -177,16 +198,19 @@ Movies
   padding-bottom: 5rem;
   padding-top: 3rem;
 }
+
 .movie {
   position: relative;
   overflow: hidden;
 }
+
 .movie img {
   width: 100%;
   height: 400px;
   display: block;
   object-fit: cover;
 }
+
 .movie-info {
   position: absolute;
   bottom: 0;
@@ -197,17 +221,21 @@ Movies
   transform: translateY(100%);
   transition: var(--transition);
 }
+
 .movie-info h4 {
   color: var(--clr-white);
   margin-bottom: 0.25rem;
 }
+
 .movie-info p {
   margin-bottom: 0;
   color: var(--clr-white);
 }
+
 .movie:hover .movie-info {
   transform: translateY(0);
 }
+
 @media screen and (min-width: 576px) {
   .movies {
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -227,16 +255,19 @@ Single Movie
   display: grid;
   gap: 2rem;
 }
+
 .single-movie img {
   width: 100%;
   display: block;
 }
+
 .single-movie p {
   max-width: 35em;
   font-size: 1.2rem;
   margin-top: 1.5rem;
   line-height: 1.8;
 }
+
 .btn {
   text-transform: capitalize;
   padding: 0.25rem 0.5rem;
@@ -247,11 +278,13 @@ Single Movie
   margin-top: 0.5rem;
   letter-spacing: var(--spacing);
 }
+
 @media screen and (min-width: 992px) {
   .single-movie {
     grid-template-columns: 1fr 2fr;
   }
 }
+
 .page-error {
   text-align: center;
   padding: 2rem;
