@@ -30,3 +30,4 @@ npm install react-router-dom@6
    - [React](https://github.com/topics/react)
 
 2. **Tools** 🔧
+   - [Chrome](https://github.com/topics/chrome)
