@@ -16,3 +16,8 @@ npm install react-router-dom@6
 #### Single Movie
 
 ![alt text](./Screenshots/image-2.png)
+
+
+-----
+
+## Languages and Tools are used 🗣️🔧
