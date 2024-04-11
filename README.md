@@ -39,4 +39,5 @@ npm install react-router-dom@6
 
 ## Deployment 📥
 
-1. How to deploy our project to the ***Netlify*** site?
+1. How to deploy our project to the **_Netlify_** site?
+2. I use [Netlify App](https://app.netlify.com/) for deploying my projects.
