@@ -47,9 +47,10 @@ npm install react-router-dom@6
 6. After selecting here you can see that the project **_Review configuration for Movie DB_** and then select the **_Deploy Movie DB_** Button.
 7. Now your project is Live.
 
-
 ---
 
 ## Author 👩🏻‍💻
 
 **Mastoora Turkmen**
+
+[LinkedIn](https://www.linkedin.com/in/mastoora-turkmen/)
